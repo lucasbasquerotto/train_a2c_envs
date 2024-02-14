@@ -39,8 +39,8 @@ class Settings():
         base_dir = "data/weights"
         self.base_dir = base_dir
 
-        self.actor_weights_path = f"${base_dir}/actor_weights.h5"
-        self.critic_weights_path = f"${base_dir}/critic_weights.h5"
+        self.actor_weights_path = f"{base_dir}/actor_weights.h5"
+        self.critic_weights_path = f"{base_dir}/critic_weights.h5"
 
     def shapes(self, envs: VectorEnv) -> Shapes:
         return Shapes(envs)
